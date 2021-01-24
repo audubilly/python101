@@ -66,8 +66,6 @@ amazon_cart.extend(['jump', 'juice', 'jameson'])
 
 print(amazon_cart)
 
-
-
 # REMOVING ITEMS
 amazon_cart.pop(3)
 print(amazon_cart)
@@ -77,3 +75,21 @@ print(amazon_cart)
 
 amazon_cart.remove('jackets')  # to remove an item from a list .
 print(amazon_cart)
+
+user_name = input('Enter user_name: ')
+password = input('Enter password: ')
+hidden_password = '*' * len(password)
+
+print(f'{user_name}, Your password, {hidden_password} ,is {len(password)} letters long')  # Password hider
+
+is_old = False
+
+if is_old:
+    print('you can drive the car')
+else:
+    print('you are under aged')   # If conditional statement
+
+is_friend = True
+
+can_message = 'Message allowed' if is_friend else 'Message not allowed'  # Ternary operator
+print(can_message)
